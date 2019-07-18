@@ -4,7 +4,7 @@ utils： 常用的一些工具函数
 ### lazyImage.vue
 lazyImage：图片懒加载方法
 
-### vue_axios.js
+### api/http.js
 vue中Axios方法封装
 
 安装axios
