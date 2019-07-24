@@ -167,3 +167,16 @@ function sub(arg1, arg2) {
   n = (r1 >= r2) ? r1 : r2; 
   return Number(((arg1 * m - arg2 * m) / m).toFixed(n)); 
 }
+
+// 复制
+function copy () {
+  const input = document.createElement('input')
+  document.body.appendChild(input)
+  input.setAttribute('value', `想复制的内容`)
+  input.select()
+  if (document.execCommand('copy')) {
+    document.execCommand('copy')
+    this.$message.success('复制成功')
+  }
+  document.body.removeChild(input)
+}
