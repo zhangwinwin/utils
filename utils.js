@@ -180,3 +180,37 @@ function copy () {
   }
   document.body.removeChild(input)
 }
+
+// 单行写评级
+// "★★★★★☆☆☆☆☆".slice(5 - rate, 10 - rate)
+var rate = 1
+"★★★★★☆☆☆☆☆".slice(5 - rate, 10 - rate)
+// "★☆☆☆☆"
+var rate = 2
+"★★★★★☆☆☆☆☆".slice(5 - rate, 10 - rate)
+// "★★☆☆☆"
+
+// 随机取字符串
+Math.random().toString(16).substring(2) 
+Math.random().toString(36).substring(2)
+
+// 取整
+var a = ~~2.33
+
+var b= 2.33 | 0
+
+var c= 2.33 >> 0
+
+//优雅的实现金钱格式化：1234567890 --> 1,234,567,890
+//正则
+var test1 = '1234567890'
+var format = test1.replace(/\B(?=(\d{3})+(?!\d))/g, ',')
+
+console.log(format) // 1,234,567,890
+//非正则
+function formatCash(str) {
+  return str.split('').reverse().reduce((prev, next, index) => {
+       return ((index % 3) ? next : (next + ',')) + prev
+  })
+}
+console.log(formatCash('1234567890')) // 1,234,567,890
