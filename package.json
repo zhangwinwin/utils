@@ -1,11 +1,22 @@
 {
   "name": "utils",
   "version": "1.0.0",
-  "description": "",
+  "description": "utils： 常用的一些工具函数",
   "main": "utils.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zhangwinwin/utils.git"
+  },
+  "bugs": {
+    "url": "https://github.com/zhangwinwin/utils/issues"
+  },
+  "homepage": "https://github.com/zhangwinwin/utils#readme",
+  "dependencies": {
+    "koa": "^2.11.0"
+  }
 }

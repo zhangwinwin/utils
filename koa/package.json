@@ -1,0 +1,7 @@
+{
+  "dependencies": {
+    "koa-conditional-get": "^2.0.0",
+    "koa-etag": "^3.0.0",
+    "koa-range": "^0.3.0"
+  }
+}
